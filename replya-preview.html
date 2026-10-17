@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Replya | Offline Web Preview</title><style>:root{color-scheme:dark;--bg:#0b1015;--panel:#121b23;--line:#25323e;--text:#eef4f7;--muted:#9cacb9;--accent:#7ae7c0;--warn:#f4c880}*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#163128 0,transparent 35%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8;font-size:14px}.shell{max-width:1140px;margin:auto;padding:34px 24px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:15px}.logo{background:var(--accent);color:#103c2c;border-radius:16px;width:54px;height:54px;display:grid;place-items:center;font-size:28px;font-weight:800;direction:ltr}h1,h2,p{margin:0}h1{font-size:25px}h2{font-size:17px}p,small{color:var(--muted)}small{display:block;font-size:11px;margin-top:5px}.brand p{font-size:12px}.pill{border:1px solid var(--line);padding:6px 12px;border-radius:30px;font-size:11px;direction:ltr;color:var(--accent);white-space:nowrap}.notice{border:1px solid #534634;background:#231e17;padding:14px 18px;border-radius:12px;color:var(--warn);font-size:12px;margin-bottom:23px;display:flex;gap:9px;flex-wrap:wrap}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:20px}.narrow{max-width:650px;margin:34px auto 80px}.cardhead{display:flex;gap:12px;align-items:flex-start;margin-bottom:22px}.cardhead p{font-size:11px;margin-top:4px}.step{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;border:1px solid #315449;background:#172e27;color:var(--accent);border-radius:10px;font-size:11px;direction:ltr}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid>.card{margin-bottom:0}.grid{margin-bottom:20px}label{display:block;margin-top:13px;margin-bottom:6px;font-size:12px;color:#c6d3dc}input,select,textarea{font:inherit;line-height:1.6;border:1px solid #31404d;border-radius:10px;background:#0c141b;color:var(--text);width:100%;padding:11px 12px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 2px #7ae7c012}textarea{resize:vertical}.check{display:flex;align-items:flex-start;gap:9px;font-size:11px}.check input{width:15px;margin:5px 0;accent-color:var(--accent)}button{font:inherit;font-size:12px;font-weight:bold;border-radius:10px;padding:11px 16px;border:1px solid transparent;cursor:pointer;width:100%;margin-top:17px;transition:.15s}button:hover{filter:brightness(1.08)}button:disabled{opacity:.4;cursor:not-allowed}.primary{background:var(--accent);color:#083b2b}.secondary{background:#1c2934;color:var(--text);border-color:#334450}.compact{width:auto;min-width:180px}.footnote{font-size:10px;margin-top:12px}.account{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:9px;background:#0d151c;font-size:12px}.dot{width:7px;height:7px;background:var(--muted);border-radius:100%}.account.connected .dot{background:var(--accent)}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.stats>div{background:#0c151b;padding:16px;border:1px solid #24323b;border-radius:12px}.stats strong{font-size:25px;direction:ltr;display:block;line-height:1.4}.stats span{color:var(--muted);font-size:11px}.rulegrid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:18px}.rulegrid label{margin-top:0}.empty{text-align:center;border:1px dashed #31434f;border-radius:12px;color:var(--muted);padding:38px 20px;font-size:12px}.commentrow{padding:17px;background:#0c151c;border:1px solid #273541;border-radius:12px;margin-bottom:12px;overflow-wrap:anywhere}.rowhead{display:flex;justify-content:space-between;gap:12px;align-items:center}.user{direction:ltr;text-align:right;font-weight:bold;color:var(--accent);font-size:12px}.reason{font-size:10px;color:var(--muted)}.commenttext{margin-top:8px;white-space:pre-wrap}.replybox{background:#163026;border-right:3px solid var(--accent);border-radius:8px;padding:12px;margin-top:12px;white-space:pre-wrap;font-size:12px}.commentrow button{width:auto}.receipt{font-size:11px;color:var(--accent);margin-top:10px}#message{position:sticky;top:12px;z-index:9;background:#173a2b;border:1px solid #376a51;border-radius:12px;padding:14px 18px;margin-bottom:18px;white-space:pre-wrap;font-size:12px}#message.error{background:#381f21;border-color:#855252;color:#ffc1bb}footer{display:flex;justify-content:space-between;gap:15px;color:#697d8c;font-size:10px;margin-top:32px}footer span:first-child{direction:ltr}body[aria-busy=true]{cursor:progress}body[aria-busy=true] button{opacity:.45;pointer-events:none}@media(max-width:760px){.shell{padding:20px 14px}.grid{grid-template-columns:1fr}.rulegrid{grid-template-columns:1fr 1fr;gap:13px}.card{padding:18px}header{align-items:flex-start}.pill{font-size:9px;padding:5px 8px}h1{font-size:21px}.brand{gap:10px}.brand p{max-width:190px}.logo{width:43px;height:43px;border-radius:13px}footer{flex-direction:column;gap:3px}.notice{font-size:11px}}@media(max-width:420px){.rulegrid{grid-template-columns:1fr}.stats strong{font-size:22px}}
+
+.headeractions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}.logout{width:auto;margin:0;padding:8px 12px;background:transparent;border:1px solid #364653;color:#bfd0db;font-size:11px}.demoNote{background:#142e28;border:1px solid #2c5b4c;padding:12px;border-radius:10px;color:#b0e3c8;font-size:12px;margin-top:16px}input,select,textarea{min-width:0;max-width:100%}.grid>*{min-width:0}.rowhead{flex-wrap:wrap}[hidden]{display:none!important}.narrow{max-width:520px;margin:54px auto 0}.narrow .step{background:#214236;color:#9fdfbf}button:focus-visible,a:focus-visible{outline:3px solid #7ad2b1;outline-offset:3px}button:disabled{opacity:.4;cursor:not-allowed}@media(max-width:760px){input,select,textarea{font-size:16px}.headeractions{max-width:145px;gap:8px}.narrow{margin-top:25px}.logout{font-size:10px}.notice{line-height:1.9}}
+
+#message{position:relative;top:auto}#accountName{direction:ltr;unicode-bidi:isolate}
+</style>
+
+</head>
+<body>
+<div class="shell">
+<header><div class="brand"><div class="logo">R.</div><div><h1 data-t="brand"></h1><p data-t="subtitle"></p></div></div><div class="headeractions"><span id="mode" class="pill">WEB EDITION</span><button id="logout" type="button" disabled class="logout" hidden data-t="logout"></button></div></header>
+<div class="notice"><strong data-t="noticeTitle"></strong><span data-t="notice"></span></div>
+<div id="message" role="status" aria-live="polite" hidden></div>
+<section id="unlockCard" class="card narrow">
+<div class="cardhead"><span class="step">01</span><div><h2 data-t="unlockTitle"></h2><p data-t="unlockNote"></p></div></div>
+<form id="unlockForm"><label for="panelKey" data-t="panelKey"></label><input id="panelKey" type="hidden" autocomplete="off" required dir="ltr" minlength="32" maxlength="256"><button class="primary" type="submit" data-t="unlock"></button></form>
+</section>
+<main id="workspace" hidden>
+<div class="grid">
+<section class="card">
+<div class="cardhead"><span class="step">01</span><div><h2 data-t="connection"></h2><p data-t="sessionNote"></p></div></div>
+<div id="accountLine" class="account"><span class="dot"></span><span id="accountName" data-t="disconnected"></span></div>
+<p id="demoNote" class="demoNote" data-t="demoNote" hidden></p><form id="loginForm">
+<label for="username" data-t="username"></label><input id="username" dir="ltr" autocomplete="username" spellcheck="false" pattern="[A-Za-z0-9._]{1,30}" required>
+<label for="password" data-t="password"></label><input id="password" dir="ltr" type="password" autocomplete="current-password" required maxlength="256">
+<label for="code" data-t="code"></label><input id="code" dir="ltr" type="text" autocomplete="one-time-code" inputmode="numeric" maxlength="20">
+<label class="check"><input id="ownAccount" type="checkbox" required><span data-t="ownAccount"></span></label>
+<button class="primary" type="submit" data-t="connect"></button>
+</form>
+<button id="disconnect" type="button" class="secondary" hidden data-t="forget"></button>
+<p class="footnote" data-t="forgetNote"></p>
+</section>
+<section class="card">
+<div class="cardhead"><span class="step">02</span><div><h2 data-t="choosePost"></h2><p data-t="postNote"></p></div></div>
+<button id="loadPosts" class="secondary" type="button" data-t="loadPosts"></button>
+<label for="postSelect" data-t="post"></label><select id="postSelect"><option value="" data-t="loadFirst"></option></select>
+<button id="loadComments" class="primary" type="button" data-t="readComments"></button>
+<div class="stats"><div><strong id="commentCount">0</strong><span data-t="commentsCount"></span></div><div><strong id="attemptCount">0 / 5</strong><span data-t="attemptsCount"></span></div></div>
+<p class="footnote" data-t="limitNote"></p>
+</section>
+</div>
+<section class="card rule">
+<div class="cardhead"><span class="step">03</span><div><h2 data-t="ruleTitle"></h2><p data-t="ruleNote"></p></div></div>
+<form id="ruleForm">
+<div class="rulegrid"><div><label for="tester" data-t="tester"></label><input id="tester" dir="ltr" required pattern="[A-Za-z0-9._]{1,30}" spellcheck="false"><small data-t="testerNote"></small></div><div><label for="keyword" data-t="keyword"></label><input id="keyword" required maxlength="100"></div><div><label for="matchMode" data-t="matchMode"></label><select id="matchMode"><option value="word" data-t="word"></option><option value="contains" data-t="contains"></option><option value="exact" data-t="exact"></option></select></div><div><label for="action" data-t="action"></label><select id="action"><option value="dm" data-t="dm"></option><option value="comment" data-t="comment"></option></select></div></div>
+<label for="reply" data-t="reply"></label><textarea id="reply" required maxlength="1000" rows="3"></textarea><small data-t="placeholderNote"></small>
+<button type="submit" class="primary compact" data-t="preview"></button>
+</form></section>
+<section class="card"><div class="cardhead"><span class="step">04</span><div><h2 data-t="results"></h2><p data-t="resultsNote"></p></div></div><div id="rows"><div class="empty" data-t="empty"></div></div></section>
+</main>
+<footer><span>REPLYA / WEB 0.2</span><span data-t="footer"></span></footer>
+</div>
+<script>
+// Standalone demo only. All fetch calls stay in this file; no network or credentials.
+(() => {
+ let connected=false,attempts=0;const drafts=new Map(),done=new Set();
+ const comments=[
+ {id:'2001',user_id:'900002',username:'demo_tester',text:'\u0633\u0644\u0627\u0645\u060c \u0642\u06cc\u0645\u062a\u061f'},
+ {id:'2002',user_id:'900003',username:'other_user',text:'\u0642\u06cc\u0645\u062a\u061f'},
+ {id:'2003',user_id:'900002',username:'demo_tester',text:'\u0639\u0627\u0644\u06cc\u0647'}];
+ const norm=s=>s.normalize('NFKC').toLowerCase().replace(/[\u064a\u0649]/g,'\u06cc').replace(/\u0643/g,'\u06a9')
+ .replace(/[\u200c\u200d]/g,' ').replace(/[\ufeff\u0640]/g,'').replace(/[\u06f0-\u06f9]/g,c=>String(c.charCodeAt(0)-0x6f0))
+ .replace(/[\u0660-\u0669]/g,c=>String(c.charCodeAt(0)-0x660)).replace(/\p{Mn}/gu,'').replace(/\s+/g,' ').trim();
+ const match=(t,k,m)=>{t=norm(t);k=norm(k);if(!k)return false;if(m==='exact')return t===k;if(m==='contains')return t.includes(k);
+ const e=k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');return new RegExp('(?<![\\p{L}\\p{N}_])'+e+'(?![\\p{L}\\p{N}_])','u').test(t);};
+ const response=(data,status=200)=>Promise.resolve(new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json'}}));
+ window.fetch=async (url,options={})=>{
+ const path=String(url);const p=options.body?JSON.parse(options.body):{};
+ if(path==='/auth/status'||path==='/auth/login')return response({authenticated:true,csrf:'offline-demo-only',mode:'demo'});
+ if(path==='/auth/logout'){connected=false;drafts.clear();return response({logged_out:true});}
+ const status=()=>({mode:'demo',account:connected?{id:'900001',username:'demo_owner'}:null,paused:null,attempts_today:attempts,limit:5});
+ if(path==='/api/status')return response(status());
+ if(path==='/api/login'){connected=true;return response(status());}
+ if(path==='/api/disconnect'){connected=false;drafts.clear();return response({forgotten_on_server:true});}
+ if(!connected)return response({error:'not_connected'},409);
+ if(path==='/api/posts')return response({posts:[{id:'10001_900001',caption:'\u067e\u0633\u062a \u0622\u0632\u0645\u0627\u06cc\u0634\u06cc \u0631\u06cc\u067e\u0644\u0627\u06cc\u0627',comments:3}]});
+ if(path==='/api/comments')return response({comments,one_page_only:true});
+ if(path==='/api/preview'){
+ drafts.clear();
+ const rows=comments.map(c=>{
+ let reason=c.username.toLowerCase()!==p.tester.toLowerCase()?'not_tester':!match(c.text,p.keyword,p.mode)?'no_match':null;
+ const key=c.id+':'+p.action;if(!reason&&done.has(key))reason='already_attempted';
+ const row={comment_id:c.id,text:c.text,username:c.username,reason,action:p.action};
+ if(!reason){row.token='offline-demo-token-'+c.id+'-'+p.action;row.reply=p.reply.replaceAll('{username}',c.username);drafts.set(row.token,{...row,key});}
+ return row;});return response({rows});
+ }
+ if(path==='/api/send'){
+ const d=drafts.get(p.token);if(!p.confirmed)return response({error:'confirmation_required'},400);
+ if(!d)return response({error:'expired_preview'},409);if(attempts>=5)return response({error:'test_limit'},429);
+ if(done.has(d.key))return response({error:'already_attempted'},409);
+ attempts++;done.add(d.key);drafts.delete(p.token);
+ return response({state:'demo_only',receipt_id:'offline-demo-'+attempts,delivery_verified:false});
+ }
+ return response({error:'offline_demo_only'},404);
+ };
+})();
+
+'use strict';
+const T = {
+ brand:'\u0631\u06cc\u067e\u0644\u0627\u06cc\u0627',
+ subtitle:'\u0622\u0632\u0645\u0627\u06cc\u0634\u06af\u0627\u0647 \u0627\u062a\u0635\u0627\u0644 \u0645\u0633\u062a\u0642\u06cc\u0645 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645',
+ noticeTitle:'\u0646\u0633\u062e\u0647 \u0622\u0632\u0645\u0627\u06cc\u0634\u06cc\u060c \u0646\u0647 \u0633\u0631\u0648\u06cc\u0633 \u062a\u062c\u0627\u0631\u06cc.',
+ notice:'\u0627\u062a\u0635\u0627\u0644 \u063a\u06cc\u0631\u0631\u0633\u0645\u06cc \u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u062f \u0628\u0627\u0639\u062b \u0645\u062d\u062f\u0648\u062f\u06cc\u062a \u062d\u0633\u0627\u0628 \u0634\u0648\u062f. \u0647\u06cc\u0686 \u067e\u06cc\u0627\u0645\u06cc \u0628\u062f\u0648\u0646 \u062a\u0623\u06cc\u06cc\u062f \u062a\u0648 \u0627\u0631\u0633\u0627\u0644 \u0646\u0645\u06cc\u200c\u0634\u0648\u062f.',
+ unlockTitle:'\u0648\u0631\u0648\u062f \u0628\u0647 \u067e\u0646\u0644 \u0645\u062d\u0644\u06cc',
+ unlockNote:'\u06a9\u0644\u06cc\u062f PANEL KEY \u0631\u0627 \u0627\u0632 \u067e\u0646\u062c\u0631\u0647 \u0627\u062c\u0631\u0627\u06cc \u0628\u0631\u0646\u0627\u0645\u0647 \u06a9\u067e\u06cc \u06a9\u0646. \u0627\u06cc\u0646 \u06a9\u0644\u06cc\u062f \u0631\u0645\u0632 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0646\u06cc\u0633\u062a.',
+ panelKey:'\u06a9\u0644\u06cc\u062f \u067e\u0646\u0644',unlock:'\u0628\u0627\u0632 \u06a9\u0631\u062f\u0646 \u067e\u0646\u0644',
+ connection:'\u0627\u062a\u0635\u0627\u0644 \u062d\u0633\u0627\u0628',
+ sessionNote:'\u0631\u0645\u0632 \u0648 \u0646\u0634\u0633\u062a \u0631\u0648\u06cc \u062f\u06cc\u0633\u06a9 \u0630\u062e\u06cc\u0631\u0647 \u0646\u0645\u06cc\u200c\u0634\u0648\u0646\u062f.',
+ disconnected:'\u0645\u062a\u0635\u0644 \u0646\u06cc\u0633\u062a',username:'\u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u0628\u062f\u0648\u0646 @',password:'\u0631\u0645\u0632 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645',
+ code:'\u06a9\u062f \u062f\u0648\u0645\u0631\u062d\u0644\u0647\u200c\u0627\u06cc \u062f\u0631 \u0635\u0648\u0631\u062a \u0646\u06cc\u0627\u0632',
+ ownAccount:'\u0627\u06cc\u0646 \u067e\u06cc\u062c \u0645\u062a\u0639\u0644\u0642 \u0628\u0647 \u0645\u0646 \u0627\u0633\u062a \u0648 \u0631\u06cc\u0633\u06a9 \u0627\u062a\u0635\u0627\u0644 \u063a\u06cc\u0631\u0631\u0633\u0645\u06cc \u0631\u0627 \u0645\u06cc\u200c\u062f\u0627\u0646\u0645.',
+ connect:'\u0648\u0631\u0648\u062f \u0628\u0647 \u062d\u0633\u0627\u0628',forget:'\u0642\u0637\u0639 \u0627\u062a\u0635\u0627\u0644 \u0648 \u062d\u0630\u0641 \u0646\u0634\u0633\u062a \u0645\u062d\u0644\u06cc',
+ forgetNote:'\u062d\u0630\u0641 \u0645\u062d\u0644\u06cc\u060c \u0646\u0634\u0633\u062a \u0633\u0631\u0648\u0631 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0631\u0627 \u0644\u0632\u0648\u0645\u0627\u064b \u0628\u0627\u0637\u0644 \u0646\u0645\u06cc\u200c\u06a9\u0646\u062f.',
+ choosePost:'\u06cc\u06a9 \u067e\u0633\u062a \u0627\u0632 \u067e\u06cc\u062c \u062e\u0648\u062f\u062a',postNote:'\u062d\u062f\u0627\u06a9\u062b\u0631 \u06f1\u06f2 \u067e\u0633\u062a \u0648 \u06cc\u06a9 \u0635\u0641\u062d\u0647 \u06a9\u0627\u0645\u0646\u062a \u062f\u0631 \u0647\u0631 \u0628\u0627\u0631 \u062e\u0648\u0627\u0646\u062f\u0646.',
+ loadPosts:'\u062f\u0631\u06cc\u0627\u0641\u062a \u067e\u0633\u062a\u200c\u0647\u0627\u06cc \u0645\u0646',post:'\u067e\u0633\u062a \u0622\u0632\u0645\u0627\u06cc\u0634',loadFirst:'\u0627\u0628\u062a\u062f\u0627 \u067e\u0633\u062a\u200c\u0647\u0627 \u0631\u0627 \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646',readComments:'\u062e\u0648\u0627\u0646\u062f\u0646 \u06a9\u0627\u0645\u0646\u062a\u200c\u0647\u0627',
+ commentsCount:'\u06a9\u0627\u0645\u0646\u062a \u062f\u0631\u06cc\u0627\u0641\u062a\u200c\u0634\u062f\u0647',attemptsCount:'\u062a\u0644\u0627\u0634 \u0627\u0631\u0633\u0627\u0644 \u0627\u0645\u0631\u0648\u0632 / UTC',
+ limitNote:'\u0633\u0642\u0641 \u06f5 \u062a\u0644\u0627\u0634\u060c \u0645\u062d\u062f\u0648\u062f\u06cc\u062a \u0627\u06cc\u0646 \u0646\u0633\u062e\u0647 \u0627\u0633\u062a\u061b \u062a\u0636\u0645\u06cc\u0646 \u0627\u0645\u0646\u06cc\u062a \u062d\u0633\u0627\u0628 \u0646\u06cc\u0633\u062a.',
+ ruleTitle:'\u0642\u0627\u0646\u0648\u0646 \u0627\u06cc\u0646 \u0622\u0632\u0645\u0627\u06cc\u0634',ruleNote:'\u067e\u06cc\u0634\u200c\u0646\u0645\u0627\u06cc\u0634 \u067e\u0627\u0633\u062e \u0628\u062f\u0648\u0646 \u0627\u0631\u0633\u0627\u0644. \u0642\u0627\u0646\u0648\u0646 \u0641\u0642\u0637 \u062f\u0631 \u0647\u0645\u06cc\u0646 \u0635\u0641\u062d\u0647 \u0646\u06af\u0647 \u062f\u0627\u0634\u062a\u0647 \u0645\u06cc\u200c\u0634\u0648\u062f.',
+ tester:'\u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u062d\u0633\u0627\u0628 \u062a\u0633\u062a',testerNote:'\u0641\u0642\u0637 \u06a9\u0627\u0645\u0646\u062a \u0627\u06cc\u0646 \u062d\u0633\u0627\u0628 \u0627\u0645\u06a9\u0627\u0646 \u067e\u0627\u0633\u062e \u062f\u0627\u0631\u062f.',keyword:'\u06a9\u0644\u0645\u0647 \u06a9\u0644\u06cc\u062f\u06cc',matchMode:'\u0631\u0648\u0634 \u062a\u0637\u0628\u06cc\u0642',word:'\u06a9\u0644\u0645\u0647 \u06a9\u0627\u0645\u0644',contains:'\u0634\u0627\u0645\u0644 \u0639\u0628\u0627\u0631\u062a',exact:'\u0628\u0631\u0627\u0628\u0631\u06cc \u06a9\u0644 \u0645\u062a\u0646',
+ action:'\u0646\u0648\u0639 \u067e\u0627\u0633\u062e',dm:'\u062f\u0627\u06cc\u0631\u06a9\u062a \u0628\u0647 \u06a9\u0627\u0645\u0646\u062a\u200c\u06af\u0630\u0627\u0631',comment:'\u067e\u0627\u0633\u062e \u0632\u06cc\u0631 \u06a9\u0627\u0645\u0646\u062a',reply:'\u0645\u062a\u0646 \u067e\u0627\u0633\u062e',
+ placeholderNote:'\u0639\u0628\u0627\u0631\u062a {username} \u0628\u0627 \u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u0645\u062e\u0627\u0637\u0628 \u062c\u0627\u06cc\u06af\u0632\u06cc\u0646 \u0645\u06cc\u200c\u0634\u0648\u062f.',preview:'\u0622\u0632\u0645\u0627\u06cc\u0634 \u0642\u0627\u0646\u0648\u0646 / \u0628\u062f\u0648\u0646 \u0627\u0631\u0633\u0627\u0644',
+ results:'\u0646\u062a\u06cc\u062c\u0647 \u0648 \u062a\u0623\u06cc\u06cc\u062f \u062a\u06a9\u200c\u067e\u06cc\u0627\u0645',resultsNote:'\u0641\u0634\u0631\u062f\u0646 \u0627\u0631\u0633\u0627\u0644\u060c \u062f\u0631 \u062d\u0627\u0644\u062a \u0648\u0627\u0642\u0639\u06cc \u062f\u0631\u062e\u0648\u0627\u0633\u062a \u0634\u0628\u06a9\u0647 \u0627\u06cc\u062c\u0627\u062f \u0645\u06cc\u200c\u06a9\u0646\u062f.',empty:'\u0647\u0646\u0648\u0632 \u06a9\u0627\u0645\u0646\u062a\u06cc \u062f\u0631\u06cc\u0627\u0641\u062a \u0646\u0634\u062f\u0647 \u0627\u0633\u062a.',
+ footer:'\u0645\u062d\u0644\u06cc \u2022 \u0628\u062f\u0648\u0646 \u0627\u0631\u0633\u0627\u0644 \u06af\u0631\u0648\u0647\u06cc \u2022 \u0628\u062f\u0648\u0646 \u067e\u0627\u06cc\u0634 \u067e\u0633\u200c\u0632\u0645\u06cc\u0646\u0647',
+ ready:'\u0622\u0645\u0627\u062f\u0647 \u062a\u0623\u06cc\u06cc\u062f',not_tester:'\u062d\u0633\u0627\u0628 \u062a\u0633\u062a \u0646\u06cc\u0633\u062a',no_match:'\u06a9\u0644\u0645\u0647 \u067e\u06cc\u062f\u0627 \u0646\u0634\u062f',own_comment:'\u06a9\u0627\u0645\u0646\u062a \u062e\u0648\u062f \u067e\u06cc\u062c',already_attempted:'\u0642\u0628\u0644\u0627\u064b \u062a\u0644\u0627\u0634 \u0627\u0631\u0633\u0627\u0644 \u062b\u0628\u062a \u0634\u062f\u0647',
+ send:'\u062a\u0623\u06cc\u06cc\u062f \u0648 \u0627\u0631\u0633\u0627\u0644 \u0647\u0645\u06cc\u0646 \u067e\u0627\u0633\u062e',demoSend:'\u0634\u0628\u06cc\u0647\u200c\u0633\u0627\u0632\u06cc \u0627\u0631\u0633\u0627\u0644',
+ confirm:'\u0627\u06cc\u0646 \u067e\u0627\u0633\u062e \u0627\u0631\u0633\u0627\u0644 \u0634\u0648\u062f\u061f',accepted:'\u062f\u0631\u062e\u0648\u0627\u0633\u062a \u062a\u0648\u0633\u0637 API \u067e\u0630\u06cc\u0631\u0641\u062a\u0647 \u0634\u062f\u061b \u062f\u0631\u06cc\u0627\u0641\u062a \u0631\u0627 \u062f\u0631 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646.',
+ demoDone:'\u0641\u0642\u0637 \u0634\u0628\u06cc\u0647\u200c\u0633\u0627\u0632\u06cc \u0634\u062f\u061b \u067e\u06cc\u0627\u0645\u06cc \u0628\u0647 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0646\u0631\u0641\u062a.',connected:'\u062d\u0633\u0627\u0628 \u0645\u062a\u0635\u0644 \u0634\u062f. \u062d\u0627\u0644\u0627 \u067e\u0633\u062a\u200c\u0647\u0627 \u0631\u0627 \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646.',
+ busy:'\u062f\u0631 \u062d\u0627\u0644 \u0627\u0646\u062c\u0627\u0645\u2026',
+};
+const errors = {
+ panel_key_invalid:'\u06a9\u0644\u06cc\u062f \u067e\u0646\u0644 \u062f\u0631\u0633\u062a \u0646\u06cc\u0633\u062a.',
+ not_connected:'\u0627\u0628\u062a\u062f\u0627 \u0628\u0647 \u062d\u0633\u0627\u0628 \u0648\u0627\u0631\u062f \u0634\u0648.',
+ verification_required:'\u0628\u0631\u0646\u0627\u0645\u0647 \u0645\u062a\u0648\u0642\u0641 \u0634\u062f. \u0686\u0627\u0644\u0634 \u0627\u0645\u0646\u06cc\u062a\u06cc \u0631\u0627 \u062f\u0631 \u0627\u067e \u0631\u0633\u0645\u06cc \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646.',
+ two_factor_required:'\u06a9\u062f \u062f\u0648\u0645\u0631\u062d\u0644\u0647\u200c\u0627\u06cc \u0644\u0627\u0632\u0645 \u0627\u0633\u062a. \u0631\u0645\u0632 \u0648 \u06a9\u062f \u062c\u062f\u06cc\u062f \u0631\u0627 \u062f\u0648\u0628\u0627\u0631\u0647 \u0648\u0627\u0631\u062f \u06a9\u0646.',
+ credentials_rejected:'\u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0648\u0631\u0648\u062f \u0631\u0627 \u0646\u067e\u0630\u06cc\u0631\u0641\u062a. \u062f\u0631 \u0627\u067e \u0631\u0633\u0645\u06cc \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646.',
+ restricted:'\u062d\u0633\u0627\u0628 \u06cc\u0627 \u062f\u0631\u062e\u0648\u0627\u0633\u062a \u0645\u062d\u062f\u0648\u062f \u0634\u062f\u0647\u061b \u062a\u0633\u062a \u0645\u062a\u0648\u0642\u0641 \u0627\u0633\u062a. \u062a\u0644\u0627\u0634 \u0645\u06a9\u0631\u0631 \u0646\u06a9\u0646.',
+ delivery_unknown:'\u0646\u062a\u06cc\u062c\u0647 \u0627\u0631\u0633\u0627\u0644 \u0642\u0637\u0639\u06cc \u0646\u06cc\u0633\u062a. \u0627\u0631\u0633\u0627\u0644 \u0645\u062c\u062f\u062f \u0645\u0633\u062f\u0648\u062f \u0634\u062f\u061b \u0627\u067e \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646.',
+ read_comments_first:'\u0627\u0628\u062a\u062f\u0627 \u06a9\u0627\u0645\u0646\u062a\u200c\u0647\u0627\u06cc \u067e\u0633\u062a \u0631\u0627 \u0628\u062e\u0648\u0627\u0646.',
+ request_busy:'\u062f\u0631\u062e\u0648\u0627\u0633\u062a\u200c\u0647\u0627 \u0628\u06cc\u0634 \u0627\u0632 \u062d\u062f \u0646\u0632\u062f\u06cc\u06a9\u200c\u0627\u0646\u062f\u061b \u0686\u0646\u062f \u0644\u062d\u0638\u0647 \u0635\u0628\u0631 \u06a9\u0646.',
+ test_limit:'\u0633\u0642\u0641 \u06f5 \u062a\u0644\u0627\u0634 \u0627\u0631\u0633\u0627\u0644 \u0627\u0645\u0631\u0648\u0632 \u067e\u0631 \u0634\u062f\u0647 \u0627\u0633\u062a.',
+ login_attempt_limit:'\u0633\u0642\u0641 \u06f3 \u062a\u0644\u0627\u0634 \u0648\u0631\u0648\u062f \u062f\u0631 \u06f1\u06f5 \u062f\u0642\u06cc\u0642\u0647 \u067e\u0631 \u0634\u062f\u0647 \u0627\u0633\u062a.',
+ dependency_missing:'\u06a9\u062a\u0627\u0628\u062e\u0627\u0646\u0647 instagrapi \u0646\u0635\u0628 \u0646\u06cc\u0633\u062a. requirements.txt \u0631\u0627 \u0646\u0635\u0628 \u06a9\u0646.',
+ invalid_input:'\u0642\u0627\u0644\u0628 \u0648\u0631\u0648\u062f\u06cc \u062f\u0631\u0633\u062a \u0646\u06cc\u0633\u062a.',
+ instagram_error:'\u067e\u0627\u0633\u062e \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u06cc\u0627 \u0634\u0628\u06a9\u0647 \u0642\u0627\u0628\u0644 \u067e\u0631\u062f\u0627\u0632\u0634 \u0646\u0628\u0648\u062f. \u062a\u0633\u062a \u0645\u062a\u0648\u0642\u0641 \u0634\u062f\u0647.',
+};
+Object.assign(T,{"subtitle": "\u0646\u0633\u062e\u0647 \u0648\u0628 \u2022 \u067e\u0646\u0644 \u062e\u0635\u0648\u0635\u06cc \u0627\u062a\u0648\u0645\u0627\u0633\u06cc\u0648\u0646", "unlockTitle": "\u0648\u0631\u0648\u062f \u0628\u0647 \u067e\u0646\u0644 \u062e\u0635\u0648\u0635\u06cc", "unlockNote": "\u0631\u0645\u0632 \u067e\u0646\u0644 \u0631\u0627 \u0627\u0632 \u062a\u0646\u0638\u06cc\u0645\u0627\u062a \u0645\u06cc\u0632\u0628\u0627\u0646 \u0628\u0631\u062f\u0627\u0631. \u0627\u06cc\u0646 \u0631\u0645\u0632\u060c \u0631\u0645\u0632 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0646\u06cc\u0633\u062a.", "panelKey": "\u0631\u0645\u0632 \u062e\u0635\u0648\u0635\u06cc \u067e\u0646\u0644", "unlock": "\u0648\u0631\u0648\u062f \u0628\u0647 \u0631\u06cc\u067e\u0644\u0627\u06cc\u0627", "sessionNote": "\u0631\u0645\u0632 \u0648 \u0646\u0634\u0633\u062a \u062a\u0648\u0633\u0637 \u0627\u06cc\u0646 \u0628\u0631\u0646\u0627\u0645\u0647 \u0631\u0648\u06cc \u062f\u06cc\u0633\u06a9 \u0630\u062e\u06cc\u0631\u0647 \u0646\u0645\u06cc\u200c\u0634\u0648\u0646\u062f. \u0646\u0634\u0633\u062a \u0645\u0648\u0642\u062a \u062f\u0631 \u062d\u0627\u0641\u0638\u0647 \u0633\u0631\u0648\u0631 \u0645\u06cc\u200c\u0645\u0627\u0646\u062f.", "forget": "\u0642\u0637\u0639 \u0627\u062a\u0635\u0627\u0644 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645", "forgetNote": "\u067e\u0627\u06a9\u200c\u06a9\u0631\u062f\u0646 \u0646\u0634\u0633\u062a \u0627\u0632 \u0627\u06cc\u0646 \u0633\u0631\u0648\u0631\u060c \u0644\u0632\u0648\u0645\u0627\u064b \u0646\u0634\u0633\u062a \u0633\u0645\u062a \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0631\u0627 \u0628\u0627\u0637\u0644 \u0646\u0645\u06cc\u200c\u06a9\u0646\u062f.", "footer": "\u0648\u0628 \u2022 \u062a\u06a9\u200c\u0645\u0627\u0644\u06a9 \u2022 \u0647\u0631 \u0627\u0631\u0633\u0627\u0644 \u0628\u0627 \u062a\u0623\u06cc\u06cc\u062f \u062a\u0648", "logout": "\u062e\u0631\u0648\u062c \u0627\u0632 \u067e\u0646\u0644", "demoConnect": "\u0628\u0627\u0632\u06a9\u0631\u062f\u0646 \u062d\u0633\u0627\u0628 \u0646\u0645\u0648\u0646\u0647", "demoNote": "\u062d\u0627\u0644\u062a \u0622\u0632\u0645\u0627\u06cc\u0634\u06cc: \u0631\u0645\u0632 \u0648\u0627\u0642\u0639\u06cc \u0648\u0627\u0631\u062f \u0646\u06a9\u0646. \u0627\u06cc\u0646 \u062d\u0633\u0627\u0628 \u0648 \u06a9\u0627\u0645\u0646\u062a\u200c\u0647\u0627 \u0646\u0645\u0648\u0646\u0647 \u0647\u0633\u062a\u0646\u062f.", "noPosts": "\u067e\u0633\u062a\u06cc \u0628\u0631\u06af\u0631\u062f\u0627\u0646\u062f\u0647 \u0646\u0634\u062f.", "networkError": "\u0627\u0631\u062a\u0628\u0627\u0637 \u0628\u0627 \u0633\u0631\u0648\u0631 \u0628\u0631\u0642\u0631\u0627\u0631 \u0646\u0634\u062f."});
+Object.assign(errors,{"panel_password_invalid": "\u0631\u0645\u0632 \u067e\u0646\u0644 \u062f\u0631\u0633\u062a \u0646\u06cc\u0633\u062a.", "session_required": "\u0646\u0634\u0633\u062a \u067e\u0646\u0644 \u0645\u0646\u0642\u0636\u06cc \u0634\u062f\u0647 \u0627\u0633\u062a. \u062f\u0648\u0628\u0627\u0631\u0647 \u0648\u0627\u0631\u062f \u0634\u0648.", "csrf_rejected": "\u0627\u0639\u062a\u0628\u0627\u0631 \u0646\u0634\u0633\u062a \u062a\u063a\u06cc\u06cc\u0631 \u06a9\u0631\u062f\u0647\u061b \u0635\u0641\u062d\u0647 \u0631\u0627 \u062f\u0648\u0628\u0627\u0631\u0647 \u0628\u0627\u0632 \u06a9\u0646.", "owner_account_only": "\u0641\u0642\u0637 \u067e\u06cc\u062c \u062a\u0639\u06cc\u06cc\u0646\u200c\u0634\u062f\u0647 \u062f\u0631 \u062a\u0646\u0638\u06cc\u0645\u0627\u062a \u0633\u0631\u0648\u0631 \u0645\u062c\u0627\u0632 \u0627\u0633\u062a.", "panel_attempt_limit": "\u062a\u0639\u062f\u0627\u062f \u062a\u0644\u0627\u0634 \u0648\u0631\u0648\u062f \u0632\u06cc\u0627\u062f \u0634\u062f\u0647\u061b \u06f1\u06f5 \u062f\u0642\u06cc\u0642\u0647 \u062f\u06cc\u06af\u0631 \u0627\u0645\u062a\u062d\u0627\u0646 \u06a9\u0646.", "https_required": "\u0627\u06cc\u0646 \u0646\u0633\u062e\u0647 \u0628\u0647 \u0622\u062f\u0631\u0633 HTTPS \u0648 \u062a\u0646\u0638\u06cc\u0645\u0627\u062a \u0635\u062d\u06cc\u062d \u0633\u0631\u0648\u0631 \u0646\u06cc\u0627\u0632 \u062f\u0627\u0631\u062f."});
+T.demoConnected='\u062d\u0633\u0627\u0628 \u0646\u0645\u0648\u0646\u0647 \u0628\u0627\u0632 \u0634\u062f\u061b \u067e\u0633\u062a\u200c\u0647\u0627 \u0631\u0627 \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646.';
+Object.assign(T,{"noticeTitle": "\u067e\u06cc\u0634\u200c\u0646\u0645\u0627\u06cc\u0634 \u0622\u0641\u0644\u0627\u06cc\u0646 \u0646\u0633\u062e\u0647 \u0648\u0628.", "notice": "\u0627\u06cc\u0646 \u0641\u0627\u06cc\u0644 \u0628\u0647 \u0627\u06cc\u0646\u0633\u062a\u0627\u06af\u0631\u0627\u0645 \u0648\u0635\u0644 \u0646\u06cc\u0633\u062a. \u0631\u0645\u0632 \u0648\u0627\u0642\u0639\u06cc \u0648\u0627\u0631\u062f \u0646\u06a9\u0646. \u0645\u0646\u0637\u0642 \u0646\u0645\u0648\u0646\u0647 \u0628\u0631\u0627\u06cc \u0622\u0632\u0645\u0627\u06cc\u0634 \u0638\u0627\u0647\u0631 \u0648 \u0642\u0648\u0627\u0646\u06cc\u0646 \u0627\u0633\u062a.", "footer": "\u067e\u06cc\u0634\u200c\u0646\u0645\u0627\u06cc\u0634 \u0645\u062d\u0644\u06cc \u2022 \u0628\u062f\u0648\u0646 \u0627\u0631\u0633\u0627\u0644 \u0648\u0627\u0642\u0639\u06cc"});
+const $ = id => document.getElementById(id);
+document.querySelectorAll('[data-t]').forEach(n => n.textContent=T[n.dataset.t] || n.dataset.t);
+$('keyword').value='\u0642\u06cc\u0645\u062a';
+$('reply').value='\u0633\u0644\u0627\u0645 {username}\u060c \u0627\u06cc\u0646 \u06cc\u06a9 \u067e\u0627\u0633\u062e \u0622\u0632\u0645\u0627\u06cc\u0634\u06cc \u0627\u0633\u062a.';
+let csrf='', mode='demo', busy=false;
+function message(text, error=false){$('message').hidden=false;$('message').textContent=text;$('message').className=error?'error':'';}
+function lockPanel(){
+ csrf='';$('workspace').hidden=true;$('unlockCard').hidden=false;$('logout').hidden=true;
+ ['panelKey','password','code','username'].forEach(id=>$(id).value='');clearRows();$('postSelect').replaceChildren();
+}
+async function request(path,payload){
+ const headers={};const options={headers,cache:'no-store',credentials:'same-origin'};
+ if(payload!==undefined){options.method='POST';headers['Content-Type']='application/json';headers['X-CSRF-Token']=csrf;options.body=JSON.stringify(payload);}
+ let response,data;
+ try {response=await fetch(path,options);data=await response.json();} catch(e){throw new Error(T.networkError);}
+ if(!response.ok){const code=data.error||'internal_error';if(code==='session_required')lockPanel();throw new Error((errors[code]||T[code]||'Operation failed')+'\n['+code+']');}
+ return data;
+}
+async function api(path,payload){return request('/api/'+path,payload);}
+function demoFields(){
+ const demo=mode==='demo';
+ ['username','password','code'].forEach(id=>{
+  $(id).hidden=demo;
+  const label=document.querySelector('label[for="'+id+'"]');if(label)label.hidden=demo;
+ });
+ $('username').required=!demo;$('password').required=!demo;
+ $('ownAccount').closest('label').hidden=demo;$('ownAccount').checked=demo;
+ $('demoNote').hidden=!demo;
+ $('loginForm').querySelector('button').textContent=demo?T.demoConnect:T.connect;
+ if(demo){$('tester').value='demo_tester';}
+}
+async function openWorkspace(){
+ await refreshStatus();$('panelKey').value='';$('unlockCard').hidden=true;$('workspace').hidden=false;$('logout').hidden=false;demoFields();
+}
+async function task(fn){
+ if(busy)return;busy=true;document.body.setAttribute('aria-busy','true');
+ try{await fn();}catch(e){message(e.message || 'Connection failed',true);}
+ finally{busy=false;document.body.removeAttribute('aria-busy');}
+}
+function clearRows(){const n=document.createElement('div');n.className='empty';n.textContent=T.empty;$('rows').replaceChildren(n);$('commentCount').textContent='0';}
+async function refreshStatus(){
+ const s=await api('status');mode=s.mode;$('mode').textContent=mode==='demo'?'DEMO / NO INSTAGRAM':'PRIVATE / EXPERIMENTAL';
+ $('accountName').textContent=s.account?'@'+s.account.username+(s.paused?' / PAUSED':''):T.disconnected;
+ $('accountLine').classList.toggle('connected',!!s.account&&!s.paused);
+ $('attemptCount').textContent=s.attempts_today+' / '+s.limit;
+ $('loginForm').hidden=!!s.account&&!s.paused;$('disconnect').hidden=!s.account&&!s.paused;
+ if(s.paused)message((errors[s.paused]||s.paused)+'\n['+s.paused+']',true);
+ return s;
+}
+$('unlockForm').addEventListener('submit',event=>{event.preventDefault();task(async()=>{
+ const payload={password:$('panelKey').value};$('panelKey').value='';
+ try{const result=await request('/auth/login',payload);csrf=result.csrf;await openWorkspace();$('message').hidden=true;}
+ finally{payload.password='';}
+});});
+$('logout').addEventListener('click',()=>task(async()=>{await request('/auth/logout',{});lockPanel();$('message').hidden=true;}));
+$('loginForm').addEventListener('submit',event=>{event.preventDefault();task(async()=>{
+ if(!$('ownAccount').checked)return;
+ const payload=mode==='demo'?{username:'demo_owner',password:'demo',code:'',owned:true}:{username:$('username').value.trim(),password:$('password').value,code:$('code').value.trim(),owned:true};
+ $('password').value='';$('code').value='';
+ try{await api('login',payload);clearRows();$('postSelect').replaceChildren();await refreshStatus();message(mode==='demo'?T.demoConnected:T.connected);}
+ finally{payload.password='';payload.code='';}
+});});
+$('disconnect').addEventListener('click',()=>task(async()=>{await api('disconnect',{});clearRows();$('postSelect').replaceChildren();await refreshStatus();message(T.forgetNote);}));
+$('loadPosts').addEventListener('click',()=>task(async()=>{
+ const data=await api('posts');$('postSelect').replaceChildren();clearRows();
+ for(const p of data.posts){const o=document.createElement('option');o.value=p.id;o.textContent=p.caption || p.id;$('postSelect').append(o);}
+ if(!data.posts.length)message(T.noPosts);
+}));
+$('postSelect').addEventListener('change',clearRows);
+$('loadComments').addEventListener('click',()=>task(async()=>{
+ const post_id=$('postSelect').value;if(!post_id)throw new Error(T.loadFirst);
+ const d=await api('comments',{post_id});renderRows(d.comments);$('commentCount').textContent=d.comments.length;
+}));
+$('ruleForm').addEventListener('submit',event=>{event.preventDefault();task(async()=>{
+ const post_id=$('postSelect').value;if(!post_id)throw new Error(T.loadFirst);
+ const d=await api('preview',{post_id,keyword:$('keyword').value,mode:$('matchMode').value,reply:$('reply').value,action:$('action').value,tester:$('tester').value.trim()});renderRows(d.rows);
+});});
+function element(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}
+function renderRows(rows){
+ $('rows').replaceChildren();if(!rows.length){clearRows();return;}
+ for(const row of rows){
+ const box=element('article','commentrow');const head=element('div','rowhead');
+ head.append(element('span','user','@'+row.username),element('span','reason',row.reason?(T[row.reason]||row.reason):(row.token?T.ready:'')));
+ box.append(head,element('p','commenttext',row.text));
+ if(row.token){
+  box.append(element('div','replybox',row.reply));const button=element('button','primary',mode==='demo'?T.demoSend:T.send);button.type='button';
+  button.addEventListener('click',()=>task(async()=>{
+   if(!confirm(T.confirm+'\n'+T[row.action]+'\n@'+row.username+'\n\n'+row.reply))return;
+   // Disable after any attempt, even a lost response, until state is re-read.
+   button.disabled=true;
+   try{const receipt=await api('send',{token:row.token,confirmed:true});box.append(element('p','receipt',(mode==='demo'?T.demoDone:T.accepted)+'\nID: '+receipt.receipt_id));}
+   finally{await refreshStatus();}
+  }));box.append(button);
+ }
+ $('rows').append(box);
+ }
+}
+
+async function bootstrap(){
+ try{const state=await request('/auth/status');mode=state.mode;
+ $('mode').textContent=mode==='demo'?'DEMO / NO INSTAGRAM':'PRIVATE / EXPERIMENTAL';
+ if(state.authenticated){csrf=state.csrf;await openWorkspace();}
+ }catch(e){message(e.message,true);}
+}
+bootstrap();
+</script></body></html>

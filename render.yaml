@@ -1,0 +1,22 @@
+# Free demo deployment. NO paid disk, no persistent storage.
+# Real Instagram mode is intentionally disabled on ephemeral free hosting.
+services:
+  - type: web
+    name: replya-web-free
+    runtime: python
+    plan: free
+    buildCommand: python -m pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT --workers 1 --proxy-headers --forwarded-allow-ips='*' --no-access-log --log-level critical
+    healthCheckPath: /healthz
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: REPLYA_MODE
+        value: demo
+      - key: PANEL_PASSWORD
+        generateValue: true
+      - key: OWNER_IG_USERNAME
+        value: ''
+      - key: DATA_DIR
+        value: /tmp/replya
+      - key: PERSISTENT_DATA
+        value: '0'

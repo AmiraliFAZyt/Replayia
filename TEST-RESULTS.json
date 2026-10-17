@@ -1,0 +1,30 @@
+{
+  "web_ui": {
+    "result": "passed",
+    "method": "Chromium set_content + FastAPI TestClient fetch bridge, not a hosted network test",
+    "desktop_width": 1365,
+    "mobile_width": 390,
+    "horizontal_overflow": false,
+    "flow": "panel login, demo account, posts, comments, preview, confirmed simulated send, logout",
+    "javascript_errors": []
+  },
+  "standalone_preview": {
+    "result": "passed",
+    "method": "Chromium set_content",
+    "javascript_errors": [],
+    "instagram_connection": false
+  },
+  "live_instagram_test": "not performed",
+  "actual_cloud_deployment": "not performed; hosting connection required",
+  "backend_tests": {
+    "command": "python -m pytest -q",
+    "passed": 42,
+    "failed": 0,
+    "instagram_backend": "DemoAdapter"
+  },
+  "dependency_install": {
+    "core": "installed and used for tests",
+    "instagrapi": "version existence verified on PyPI, not installed/executed in this runtime"
+  },
+  "docker_build": "not performed"
+}
