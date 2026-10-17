@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Replya | Web Edition</title><link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div class="shell">
+<header><div class="brand"><div class="logo">R.</div><div><h1 data-t="brand"></h1><p data-t="subtitle"></p></div></div><div class="headeractions"><span id="mode" class="pill">WEB EDITION</span><button id="logout" type="button" class="logout" hidden data-t="logout"></button></div></header>
+<div class="notice"><strong data-t="noticeTitle"></strong><span data-t="notice"></span></div>
+<div id="message" role="status" aria-live="polite" hidden></div>
+<section id="unlockCard" class="card narrow">
+<div class="cardhead"><span class="step">01</span><div><h2 data-t="unlockTitle"></h2><p data-t="unlockNote"></p></div></div>
+<form id="unlockForm"><label for="panelKey" data-t="panelKey"></label><input id="panelKey" type="password" autocomplete="off" required dir="ltr" minlength="32" maxlength="256"><button class="primary" type="submit" data-t="unlock"></button></form>
+</section>
+<main id="workspace" hidden>
+<div class="grid">
+<section class="card">
+<div class="cardhead"><span class="step">01</span><div><h2 data-t="connection"></h2><p data-t="sessionNote"></p></div></div>
+<div id="accountLine" class="account"><span class="dot"></span><span id="accountName" data-t="disconnected"></span></div>
+<p id="demoNote" class="demoNote" data-t="demoNote" hidden></p><form id="loginForm">
+<label for="username" data-t="username"></label><input id="username" dir="ltr" autocomplete="username" spellcheck="false" pattern="[A-Za-z0-9._]{1,30}" required>
+<label for="password" data-t="password"></label><input id="password" dir="ltr" type="password" autocomplete="current-password" required maxlength="256">
+<label for="code" data-t="code"></label><input id="code" dir="ltr" type="text" autocomplete="one-time-code" inputmode="numeric" maxlength="20">
+<label class="check"><input id="ownAccount" type="checkbox" required><span data-t="ownAccount"></span></label>
+<button class="primary" type="submit" data-t="connect"></button>
+</form>
+<button id="disconnect" type="button" class="secondary" hidden data-t="forget"></button>
+<p class="footnote" data-t="forgetNote"></p>
+</section>
+<section class="card">
+<div class="cardhead"><span class="step">02</span><div><h2 data-t="choosePost"></h2><p data-t="postNote"></p></div></div>
+<button id="loadPosts" class="secondary" type="button" data-t="loadPosts"></button>
+<label for="postSelect" data-t="post"></label><select id="postSelect"><option value="" data-t="loadFirst"></option></select>
+<button id="loadComments" class="primary" type="button" data-t="readComments"></button>
+<div class="stats"><div><strong id="commentCount">0</strong><span data-t="commentsCount"></span></div><div><strong id="attemptCount">0 / 5</strong><span data-t="attemptsCount"></span></div></div>
+<p class="footnote" data-t="limitNote"></p>
+</section>
+</div>
+<section class="card rule">
+<div class="cardhead"><span class="step">03</span><div><h2 data-t="ruleTitle"></h2><p data-t="ruleNote"></p></div></div>
+<form id="ruleForm">
+<div class="rulegrid"><div><label for="tester" data-t="tester"></label><input id="tester" dir="ltr" required pattern="[A-Za-z0-9._]{1,30}" spellcheck="false"><small data-t="testerNote"></small></div><div><label for="keyword" data-t="keyword"></label><input id="keyword" required maxlength="100"></div><div><label for="matchMode" data-t="matchMode"></label><select id="matchMode"><option value="word" data-t="word"></option><option value="contains" data-t="contains"></option><option value="exact" data-t="exact"></option></select></div><div><label for="action" data-t="action"></label><select id="action"><option value="dm" data-t="dm"></option><option value="comment" data-t="comment"></option></select></div></div>
+<label for="reply" data-t="reply"></label><textarea id="reply" required maxlength="1000" rows="3"></textarea><small data-t="placeholderNote"></small>
+<button type="submit" class="primary compact" data-t="preview"></button>
+</form></section>
+<section class="card"><div class="cardhead"><span class="step">04</span><div><h2 data-t="results"></h2><p data-t="resultsNote"></p></div></div><div id="rows"><div class="empty" data-t="empty"></div></div></section>
+</main>
+<footer><span>REPLYA / WEB 0.2</span><span data-t="footer"></span></footer>
+</div>
+</body></html>
